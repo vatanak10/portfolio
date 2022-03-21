@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #0b486b;
-  --color-secondary: #ffde32;
+  --color-secondary: #f45b69;
   --color-white: #fff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -93,6 +93,14 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all 0.4s ease-in-out;
+    i {
+      color: var(--color-white) !important;
+    }
+  }
 
   .control {
     margin: 0.7rem 0;
