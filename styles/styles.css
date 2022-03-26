@@ -475,7 +475,7 @@ section {
 .about-timeline .timeline .timeline-item .timeline-duration {
   padding: 0.2rem 0.6rem;
   background-color: var(--color-grey-4);
-  border-radius: 15px;
+  border-radius: 5px;
   display: inline-block;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -493,6 +493,10 @@ section {
   color: var(--color-grey-2);
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.about-timeline .timeline .timeline-item ul {
+  line-height: 1.5rem;
 }
 
 .btn-container {

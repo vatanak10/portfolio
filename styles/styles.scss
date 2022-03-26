@@ -361,7 +361,7 @@ section {
       .timeline-duration {
         padding: 0.2rem 0.6rem;
         background-color: var(--color-grey-4);
-        border-radius: 15px;
+        border-radius: 5px;
         display: inline-block;
         font-size: 0.8rem;
         text-transform: uppercase;
@@ -378,6 +378,9 @@ section {
           font-weight: 500;
           font-size: 1.2rem;
         }
+      }
+      ul {
+        line-height: 1.5rem;
       }
     }
   }
