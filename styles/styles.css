@@ -78,7 +78,6 @@ section {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: yellow;
 }
 
 .sec4 {
