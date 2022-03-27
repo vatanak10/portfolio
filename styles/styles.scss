@@ -393,7 +393,7 @@ section {
 
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 
@@ -547,11 +547,12 @@ section {
   position: relative;
   &::before {
     content: "";
+    position: absolute;
     left: 50%;
     top: 0;
     width: 40%;
     height: 1px;
-    background-color: var(--color-grey-5);
+    background-color: var(--color-grey-3);
     transform: translateX(-50%);
   }
 }

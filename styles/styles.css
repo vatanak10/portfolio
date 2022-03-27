@@ -506,8 +506,8 @@ section {
 .portfolios {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
@@ -710,11 +710,12 @@ section {
 
 .stat-title::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
   width: 40%;
   height: 1px;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-grey-3);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
