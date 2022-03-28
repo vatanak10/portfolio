@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/tooltip/tooltip.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -299,13 +300,48 @@
         <div class="portfolios">
           <div class="portfolio-item">
             <div class="image">
+              <img src="img/portfolio/ibook.png" alt="ibook preview" />
+            </div>
+            <div class="hover-item">
+              <h3>iBOOK</h3>
+              <div class="icons">
+                <a
+                  class="icon"
+                  href="https://play.google.com/store/apps/details?id=com.bookmanagement.ibook"
+                  target="_blank"
+                  data-tooltip="Play Store"
+                  data-tooltip-conf="bottom"
+                >
+                  <i class="fab fa-google-play"></i>
+                </a>
+                <a
+                  class="icon"
+                  href="https://github.com/incubation-center/Flutter-app---Group8"
+                  target="_blank"
+                  data-tooltip="GitHub"
+                  data-tooltip-conf="bottom"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="image">
               <img src="img/portfolio/bigbite.png" alt="bigbite.hk homepage" />
             </div>
             <div class="hover-item">
               <h3>BIGBITE.HK</h3>
               <div class="icons">
-                <a class="icon" href="https://bigbite.hk/" target="_blank">
-                  <i class="fab fa-github"></i>
+                <a
+                  class="icon"
+                  href="https://bigbite.hk/"
+                  target="_blank"
+                  data-tooltip="Go to Website"
+                  data-tooltip-conf="bottom"
+                >
+                  <i class="fa fa-link"></i>
                 </a>
               </div>
             </div>
