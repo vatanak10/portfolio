@@ -11,12 +11,13 @@ $green: #8bc34a;
 $blue: #29d2e4;
 $darkblue: #0b486b;
 $orange: #f87d09;
+$orange-pink: #f45b69;
 $dark-pink: #e91e63;
 $light-purple: #efedff;
 //Primary-color
 $tooltip-base-text-color: $white;
-$tooltip-base-bg-color: $darkblue;
-$tooltip-base-border-color: $darkblue;
+$tooltip-base-bg-color: $black;
+$tooltip-base-border-color: $black;
 $main-background: $light-purple;
 //Types
 $tooltip-invert-bg-color: $grey;
@@ -24,6 +25,8 @@ $tooltip-success-bg-color: $green;
 $tooltip-info-bg-color: $blue;
 $tooltip-warning-bg-color: $orange;
 $tooltip-danger-bg-color: $dark-pink;
+$tooltip-primary-bg-color: $darkblue;
+$tooltip-secondary-bg-color: $orange-pink;
 //Features
 
 *,
@@ -533,6 +536,72 @@ h3 {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: $tooltip-danger-bg-color;
+}
+
+// Tooltip Primary Color
+[data-tooltip][data-tooltip-conf*="primary"]:after {
+  background: $tooltip-primary-bg-color;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"]:before {
+  border-top-color: $tooltip-primary-bg-color;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="right"]:before {
+  border-top-color: transparent;
+  border-right-color: $tooltip-primary-bg-color;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="bottom"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: $tooltip-primary-bg-color;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="left"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: $tooltip-primary-bg-color;
+}
+
+// Tooltip Secondary Color
+[data-tooltip][data-tooltip-conf*="secondary"]:after {
+  background: $tooltip-secondary-bg-color;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"]:before {
+  border-top-color: $tooltip-secondary-bg-color;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="right"]:before {
+  border-top-color: transparent;
+  border-right-color: $tooltip-secondary-bg-color;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="bottom"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: $tooltip-secondary-bg-color;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="left"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: $tooltip-secondary-bg-color;
 }
 
 [data-tooltip][data-tooltip=""] {

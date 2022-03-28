@@ -117,11 +117,11 @@ h3 {
 }
 
 [data-tooltip]:after {
-  background: #0b486b;
+  background: #000;
 }
 
 [data-tooltip]:before {
-  border-top-color: #0b486b;
+  border-top-color: #000;
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -129,7 +129,7 @@ h3 {
 
 [data-tooltip][data-tooltip-conf*="right"]:before {
   border-top-color: transparent;
-  border-right-color: #0b486b;
+  border-right-color: #000;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
@@ -137,7 +137,7 @@ h3 {
 [data-tooltip][data-tooltip-conf*="bottom"]:before {
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-color: #0b486b;
+  border-bottom-color: #000;
   border-left-color: transparent;
 }
 
@@ -145,7 +145,7 @@ h3 {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #0b486b;
+  border-left-color: #000;
 }
 
 [data-tooltip]:focus:before, [data-tooltip]:focus:after, [data-tooltip]:hover:before, [data-tooltip]:hover:after {
@@ -482,6 +482,70 @@ h3 {
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: #e91e63;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"]:after {
+  background: #0b486b;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"]:before {
+  border-top-color: #0b486b;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="right"]:before {
+  border-top-color: transparent;
+  border-right-color: #0b486b;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="bottom"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #0b486b;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="primary"][data-tooltip-conf*="left"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #0b486b;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"]:after {
+  background: #f45b69;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"]:before {
+  border-top-color: #f45b69;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="right"]:before {
+  border-top-color: transparent;
+  border-right-color: #f45b69;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="bottom"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #f45b69;
+  border-left-color: transparent;
+}
+
+[data-tooltip][data-tooltip-conf*="secondary"][data-tooltip-conf*="left"]:before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #f45b69;
 }
 
 [data-tooltip][data-tooltip=""]:after, [data-tooltip][data-tooltip=""]:before {
