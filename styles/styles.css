@@ -1400,14 +1400,14 @@ section {
 }
 
 .contact-content-container .right-contact .input-control input, .contact-content-container .right-contact .input-control textarea {
-  border-radius: 30px;
+  border-radius: 15px;
   font-weight: inherit;
   font-size: inherit;
   font-family: inherit;
   padding: .8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-grey-4);
   width: 100%;
   color: var(--color-white);
   resize: none;
@@ -1427,9 +1427,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .btn-container {

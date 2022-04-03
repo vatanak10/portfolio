@@ -635,14 +635,14 @@ section {
     .input-control {
       margin: 1.5rem 0;
       input, textarea {
-        border-radius: 30px;
+        border-radius: 15px;
         font-weight: inherit;
         font-size: inherit;
         font-family: inherit;
         padding: .8rem 1.1rem;
         outline: none;
         border: none;
-        background-color: var(--color-grey-5);
+        background-color: var(--color-grey-4);
         width: 100%;
         color: var(--color-white);
         resize: none;
@@ -658,7 +658,7 @@ section {
 
     .submit-btn {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
     }
   }
 }
