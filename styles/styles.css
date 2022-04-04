@@ -1547,6 +1547,31 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .controls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+  }
+  .controls .control {
+    margin: 1rem .3rem;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  section {
+    padding: 2rem 2.5rem;
+  }
   .header-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1569,28 +1594,55 @@ h3 {
   .header-content .right-header .name {
     font-size: 2.5rem;
   }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-  .controls {
-    top: auto;
-    bottom: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .about-container .right-about {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .about-stats .progress-bars {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-timeline .timeline {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .about-timeline .timeline .timeline-item {
+    margin-left: 1.5rem;
+    padding-left: 2rem;
+  }
+  .about-timeline ul {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .btn-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
   }
-  .controls .control {
-    margin: 1rem .3rem;
+  .main-title {
+    padding-top: 2rem;
+  }
+  .main-title h2 {
+    font-size: 2.5rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

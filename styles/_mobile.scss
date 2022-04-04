@@ -1,4 +1,28 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {        
+    // Controls
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        // background-color: var(--color-grey-5);
+        .control {
+            margin: 1rem .3rem;
+        }
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    section {
+        padding: 2rem 2.5rem;
+    }
+
     .header-content{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
@@ -22,24 +46,63 @@
                 font-size: 2.5rem;   
             }
         }
-    } 
+    }
 
-    .theme-btn {
-        width: 50px;
-        height: 50px;
-    }    
+    // About
+    .about-container {
+        grid-template-columns: 1fr;
 
-    .controls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--color-grey-5);
-        .control {
-            margin: 1rem .3rem;
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .left-about {
+            padding-right: 0;
+            h4 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                padding-left: 0;
+            }            
         }
     }
+
+    .about-stats{
+        .progress-bars {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+
+    .about-timeline {
+        .timeline {
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+            .timeline-item {
+                margin-left: 1.5rem;
+                padding-left: 2rem;                
+            }
+        }
+        ul {
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }    
+
+    // Independence Elements
+    .btn-container {
+        justify-content: center;
+    }
+
+    .main-title {        
+        padding-top: 2rem;
+        h2 {          
+          font-size: 2.5rem;        
+          .bg-text {            
+            font-size: 3rem;            
+          }
+        }
+    }    
 }
