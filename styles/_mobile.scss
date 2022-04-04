@@ -43,7 +43,7 @@
             width: 90%;
             margin: 0 auto;
             .name {
-                font-size: 2.5rem;   
+                font-size: 2.3rem;   
             }
         }
     }
@@ -108,9 +108,24 @@
         padding-top: 2rem;
         padding-bottom: 6rem;
         .left-contact {
-            font-size: 15px;            
-            .contact-info .contact-item .icon{
-                grid-template-columns: 30px 1fr;
+            font-size: 15px;          
+            h4 {
+                font-size: 1.5rem;
+            }  
+            .contact-info {                
+                overflow: scroll;
+                .contact-item {
+                    min-width: 100vw;
+                }
+                // display: block;
+                // margin: .3rem 0;
+                // .icon {
+                //     grid-template-columns: 30px 1fr;
+                // }
+                // p {
+                //     margin: 0 !important;
+                //     text-align: end;
+                // }
             }
             .contact-icon {
                 justify-content: center;

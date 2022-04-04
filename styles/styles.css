@@ -1594,7 +1594,7 @@ h3 {
     margin: 0 auto;
   }
   .header-content .right-header .name {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .about-container {
     -ms-grid-columns: 1fr;
@@ -1651,9 +1651,14 @@ h3 {
   .contact-content-container .left-contact {
     font-size: 15px;
   }
-  .contact-content-container .left-contact .contact-info .contact-item .icon {
-    -ms-grid-columns: 30px 1fr;
-        grid-template-columns: 30px 1fr;
+  .contact-content-container .left-contact h4 {
+    font-size: 1.5rem;
+  }
+  .contact-content-container .left-contact .contact-info {
+    overflow: scroll;
+  }
+  .contact-content-container .left-contact .contact-info .contact-item {
+    min-width: 100vw;
   }
   .contact-content-container .left-contact .contact-icon {
     -webkit-box-pack: center;
