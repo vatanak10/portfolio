@@ -58,7 +58,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -1547,8 +1547,31 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .header-content .left-header .h-shape {
+    display: none;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
   .header-content .right-header {
-    padding-right: 0;
+    padding: 5rem 2rem 0 2rem !important;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-content .right-header .name {
+    font-size: 2.5rem;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
   }
   .controls {
     top: auto;
