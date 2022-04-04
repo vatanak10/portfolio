@@ -37,7 +37,7 @@
             }
         }
         .right-header {
-            padding: 5rem 2rem 0 2rem !important;
+            padding: 6rem 2rem 0 2rem !important;
             // padding-top: 15rem;
             grid-row: 1;
             width: 90%;
@@ -105,6 +105,7 @@
     // Contacts
     .contact-content-container {
         flex-direction: column;
+        padding-top: 2rem;
         padding-bottom: 6rem;
         .left-contact {
             font-size: 15px;            
@@ -143,13 +144,15 @@
     }
 
     .main-title {        
-        padding-top: 2rem;
+        padding-top: 4rem;        
         h2 {          
-          font-size: 2rem; 
-          span {
-              font-size: 2.5rem;
-          }       
-          .bg-text {            
+          font-size: 2.5rem;
+          font-weight: 900;
+        //   span {
+        //       font-size: 2.5rem;
+        //   }       
+          .bg-text {
+              display: none;
             font-size: 2.5rem;            
           }
         }
