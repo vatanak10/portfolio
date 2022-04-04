@@ -237,7 +237,7 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 }
 
 .header-content .left-header {
@@ -573,6 +573,8 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
 }
 
 .portfolios .portfolio-item .hover-item {
@@ -745,6 +747,7 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .contact-content-container .left-contact p {
@@ -1630,6 +1633,59 @@ h3 {
     text-align: justify;
     font-size: 1rem;
   }
+  .portfolios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .portfolios .portfolio-item img {
+    height: 250px;
+  }
+  .contact-content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .contact-content-container .left-contact {
+    font-size: 15px;
+  }
+  .contact-content-container .left-contact .contact-info .contact-item .icon {
+    -ms-grid-columns: 30px 1fr;
+        grid-template-columns: 30px 1fr;
+  }
+  .contact-content-container .left-contact .contact-icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .contact-content-container .right-contact .i-c-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .contact-content-container .right-contact .submit-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact .submit-btn a:first-child {
+    display: none;
+  }
+  .contact-content-container .right-contact .submit-btn a {
+    margin: .5rem auto;
+  }
   .btn-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1639,10 +1695,13 @@ h3 {
     padding-top: 2rem;
   }
   .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h2 span {
     font-size: 2.5rem;
   }
   .main-title h2 .bg-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
