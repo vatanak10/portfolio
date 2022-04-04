@@ -55,7 +55,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -183,7 +183,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 
   .left-header {
     display: flex;
@@ -254,7 +254,7 @@ section {
     grid-gap: 2rem;
 
     .about-item {
-      border: 1px solid var(--color-grey-5);
+      // border: 1px solid var(--color-grey-5);
       border-radius: 5px;
       transition: var(--transition);
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
@@ -444,6 +444,7 @@ section {
       height: 300px;
       object-fit: cover;
       border-radius: 10px;
+      box-shadow: var(--box-shadow-1);
     }
     .hover-item {
       width: 100%;
@@ -569,7 +570,8 @@ section {
     h4 {
       margin-top: 1rem;
       font-size: 2rem;
-      text-transform: uppercase;      
+      text-transform: uppercase;
+      margin-bottom: 1rem;   
     }
     p {
       margin: 1rem 0;
@@ -656,7 +658,7 @@ section {
 
     .submit-btn {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-evenly;      
     }
   }
 }
@@ -754,5 +756,5 @@ section {
 }
 
 // Import other scss files
-@import 'tooltip/tooltip';
-@import 'responsive/mobile';
+@import './tooltip';
+@import './mobile';

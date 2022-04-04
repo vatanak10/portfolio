@@ -1,0 +1,160 @@
+@media screen and (max-width: 600px) {        
+    // Controls
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        // background-color: var(--color-grey-5);
+        .control {
+            margin: 1rem .3rem;
+        }
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    section {
+        padding: 2rem 2.5rem;
+    }
+
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+
+        .left-header {
+            .h-shape {
+                display: none;
+            }
+            .image{
+                margin: 0 auto;
+                width: 90%;
+            }
+        }
+        .right-header {
+            padding: 6rem 2rem 0 2rem !important;
+            // padding-top: 15rem;
+            grid-row: 1;
+            width: 90%;
+            margin: 0 auto;
+            .name {
+                font-size: 2.5rem;   
+            }
+        }
+    }
+
+    // About
+    .about-container {
+        grid-template-columns: 1fr;
+
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .left-about {
+            padding-right: 0;
+            h4 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                padding-left: 0;
+            }            
+        }
+    }
+
+    .about-stats{
+        .progress-bars {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+
+    .about-timeline {
+        .timeline {
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+            .timeline-item {
+                margin-left: 1.5rem;
+                padding-left: 2rem;                
+            }
+        }
+        ul {
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }
+
+    // Portfolio
+    .portfolios {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+        .portfolio-item {            
+            img {
+                height: 250px;                
+            }
+        }
+    }
+
+    // Contacts
+    .contact-content-container {
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        .left-contact {
+            font-size: 15px;            
+            .contact-info .contact-item .icon{
+                grid-template-columns: 30px 1fr;
+            }
+            .contact-icon {
+                justify-content: center;
+            }
+        }
+        .right-contact {
+            margin-left: 0;
+            margin-top: 1.5rem;
+            .i-c-2 {
+                flex-direction: column;
+                :last-child {
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+            .submit-btn {
+                flex-direction: column;
+                a:first-child {
+                    display: none;
+                }      
+                a {
+                    margin: .5rem auto;
+                }                
+            }
+        }
+    }
+
+    // Independence Elements
+    .btn-container {
+        justify-content: center;
+    }
+
+    .main-title {        
+        padding-top: 4rem;        
+        h2 {          
+          font-size: 2.5rem;
+          font-weight: 900;
+        //   span {
+        //       font-size: 2.5rem;
+        //   }       
+          .bg-text {
+              display: none;
+            font-size: 2.5rem;            
+          }
+        }
+    }    
+}
