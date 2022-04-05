@@ -1,0 +1,19 @@
+@media screen and (max-width: 1366px) {
+    section {
+        padding: 2rem 7rem;
+    }
+
+    .about-container .left-about {
+        padding-right: 3rem;
+    }
+
+    .portfolios {
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-gap: 3rem;
+        .portfolio-item {            
+            img {
+                height: 250px;                
+            }
+        }
+    }
+}
