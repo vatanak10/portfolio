@@ -394,7 +394,7 @@ section {
 .about-container .left-about p {
   text-align: justify;
   line-height: 2rem;
-  padding: 1rem;
+  padding: 1rem 0;
   color: var(--color-grey-1);
 }
 
@@ -546,6 +546,10 @@ section {
 
 .about-timeline .timeline .timeline-item ul {
   line-height: 1.5rem;
+}
+
+.about-timeline .timeline .timeline-item ul li {
+  margin-bottom: 10px;
 }
 
 .port-text {

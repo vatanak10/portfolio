@@ -301,7 +301,7 @@ section {
     p {
       text-align: justify;
       line-height: 2rem;
-      padding: 1rem;
+      padding: 1rem 0;
       color: var(--color-grey-1);
     }
     h4 {
@@ -420,6 +420,10 @@ section {
       }
       ul {
         line-height: 1.5rem;
+        li {
+          margin-bottom: 10px;
+          
+        }
       }
     }
   }
