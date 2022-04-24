@@ -394,7 +394,7 @@ section {
 .about-container .left-about p {
   text-align: justify;
   line-height: 2rem;
-  padding: 1rem;
+  padding: 1rem 0;
   color: var(--color-grey-1);
 }
 
@@ -546,6 +546,10 @@ section {
 
 .about-timeline .timeline .timeline-item ul {
   line-height: 1.5rem;
+}
+
+.about-timeline .timeline .timeline-item ul li {
+  margin-bottom: 10px;
 }
 
 .port-text {
@@ -856,12 +860,10 @@ section {
   padding: .8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-grey-5);
   width: 100%;
   color: var(--color-white);
   resize: none;
-  -webkit-box-shadow: var(--box-shadow-1);
-          box-shadow: var(--box-shadow-1);
 }
 
 .contact-content-container .right-contact .i-c-2 {
