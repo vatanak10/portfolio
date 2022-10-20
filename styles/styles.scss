@@ -470,6 +470,7 @@ section {
         color: var(--color-white);
         margin-bottom: 1.5rem;
         text-transform: uppercase;
+        text-align: center;
       }
 
       .icons {
@@ -504,9 +505,14 @@ section {
       }
     }
 
-    &:hover .hover-item {
-      opacity: 1;
-      // transform: scale(1);
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.15s ease-in-out;
+      .hover-item {
+          opacity: 1;
+          transform: scale(1.02);
+          transition: all 0.2s ease-in-out;
+        }
     }
   }
 }
