@@ -456,6 +456,7 @@ section {
   color: var(--color-white);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-item .icons {
   display: flex;
@@ -485,8 +486,14 @@ section {
 .portfolios .portfolio-item .hover-item .icons .icon:hover i {
   color: var(--color-primary);
 }
+.portfolios .portfolio-item:hover {
+  transform: scale(1.05);
+  transition: all 0.15s ease-in-out;
+}
 .portfolios .portfolio-item:hover .hover-item {
   opacity: 1;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
 }
 
 .blogs {
@@ -1237,11 +1244,9 @@ h3 {
   section {
     padding: 2rem 7rem;
   }
-
   .about-container .left-about {
     padding-right: 3rem;
   }
-
   .portfolios .portfolio-item img {
     height: 250px;
   }
@@ -1259,16 +1264,13 @@ h3 {
   .controls .control {
     margin: 1rem 0.3rem;
   }
-
   .theme-btn {
     width: 50px;
     height: 50px;
   }
-
   section {
     padding: 2rem 1.5rem;
   }
-
   .header-content {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -1289,7 +1291,6 @@ h3 {
   .header-content .right-header .name {
     font-size: 2.3rem;
   }
-
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -1307,11 +1308,9 @@ h3 {
   .about-container .left-about p {
     padding: 1rem 0;
   }
-
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
-
   .about-timeline .timeline {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -1324,7 +1323,6 @@ h3 {
     text-align: justify;
     font-size: 1rem;
   }
-
   .portfolios {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -1332,7 +1330,6 @@ h3 {
   .portfolios .portfolio-item img {
     height: 250px;
   }
-
   .contact-content-container {
     flex-direction: column;
     padding-top: 2rem;
@@ -1373,11 +1370,9 @@ h3 {
   .contact-content-container .right-contact .submit-btn a {
     margin: 0.5rem auto;
   }
-
   .btn-container {
     justify-content: center;
   }
-
   .main-title {
     padding-top: 4rem;
   }
